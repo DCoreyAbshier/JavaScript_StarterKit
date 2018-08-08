@@ -8,6 +8,7 @@
 				"security-check": "nsp check",
 				"openlt": "lt --port 4800",
 				"opendev": "babel-node .\\buildScripts\\devServer.js",
+				"lint": "esw webpack.config.* src buildScripts --color",
 				"share": "npm-run-all --parallel opendev openlt"
 		},
 		"author": "Corey Abshier",
@@ -28,6 +29,7 @@
 				"cross-env": "3.1.3",
 				"css-loader": "0.25.0",
 				"eslint": "3.8.1",
+				"eslint-plugin-react": "7.10.0",
 				"eslint-plugin-import": "2.0.1",
 				"eslint-watch": "2.1.14",
 				"express": "4.16.3",
