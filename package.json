@@ -3,11 +3,11 @@
 		"version": "1.0.1",
 		"description": "JavaScript development environment",
 		"scripts": {
-				"prestart": "node .\\buildScripts\\startMessage.js",
+				"prestart": "babel-node .\\buildScripts\\startMessage.js",
 				"start": "npm-run-all --parallel security-check opendev",
 				"security-check":"nsp check",
 				"openlt": "lt --port 4800",
-				"opendev": "node .\\buildScripts\\devServer.js",
+				"opendev": "babel-node .\\buildScripts\\devServer.js",
 				"share":"npm-run-all --parallel opendev openlt"
 		},
 		"author": "Corey Abshier",
