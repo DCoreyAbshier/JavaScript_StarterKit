@@ -5,10 +5,10 @@
 		"scripts": {
 				"prestart": "babel-node .\\buildScripts\\startMessage.js",
 				"start": "npm-run-all --parallel security-check opendev",
-				"security-check":"nsp check",
+				"security-check": "nsp check",
 				"openlt": "lt --port 4800",
 				"opendev": "babel-node .\\buildScripts\\devServer.js",
-				"share":"npm-run-all --parallel opendev openlt"
+				"share": "npm-run-all --parallel opendev openlt"
 		},
 		"author": "Corey Abshier",
 		"license": "",
